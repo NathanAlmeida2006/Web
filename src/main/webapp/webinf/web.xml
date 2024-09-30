@@ -1,0 +1,29 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <display-name>Sistema de Funcionários</display-name>
+
+  <!-- Configuração do servlet para login -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>controlefuncionario.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <!-- Configuração do servlet para gerenciamento de departamentos -->
+  <servlet>
+    <servlet-name>DepartamentoServlet</servlet-name>
+    <servlet-class>controlefuncionario.DepartamentoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepartamentoServlet</servlet-name>
+    <url-pattern>/departamento</url-pattern>
+  </servlet-mapping>
+
+</web-app>
